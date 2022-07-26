@@ -20,7 +20,7 @@
                             <p class="lead">
                                 Satu tindakan kamu sangat berpengaruh bagi orang lain
                             </p>
-                            <p>Kembali ke beranda <a href="katalog_barang" class="mt-4 bb">disini</a></p>
+                            <p>Kembali ke beranda <a href="/" class="mt-4 bb">disini</a></p>
                         </div>
                     </div>
                 </div>

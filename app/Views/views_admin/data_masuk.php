@@ -27,7 +27,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Advanced Table</h4>
+                        <!-- <h4>Advanced Table</h4> -->
                         <div class="card-header-form">
                             <form>
                                 <div class="input-group">
@@ -134,16 +134,17 @@
                             <input type="lokasi" class="form-control" id="lokasi" name="lokasi" placeholder="Tuliskan lokasi barang ditemukan">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="tanggal">Tanggal Ditemukan</label>
-                        <input type="date" class="form-control" id="tanggal" name="tanggal" required="">
+                    <div class="form-group row">
+                        <label for="tanggal" class="col-sm-3 col-form-label">Tanggal Ditemukan</label>
+                        <div class="col-sm-9">
+                            <input type="date" class="form-control" id="tanggal" name="tanggal" required="">
+                        </div>
                     </div>
                     <div class="form-group row">
                         <label for="gambar" class="col-sm-3 col-form-label">Gambar Barang</label>
                         <div class="col-sm-9">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="gambar" name="gambar">
-                                <label class="custom-file-label" for="gambar">Klik disini untuk menambah gambar</label>
+                                <input type="file" class="form-control" id="gambar" name="gambar" required>
                             </div>
                         </div>
                     </div>

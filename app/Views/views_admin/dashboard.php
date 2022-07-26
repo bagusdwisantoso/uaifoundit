@@ -66,7 +66,9 @@
                         <h4>Report Barang Keluar</h4>
                     </div>
                     <div class="card-body">
-                        47
+                        <?php foreach ($total_ambil as $ambil) : ?>
+                            <?= $ambil->id_barang ?>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>

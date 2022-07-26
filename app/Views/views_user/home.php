@@ -8,20 +8,62 @@
 <?= $this->section('content') ?>
 <section class="section">
     <div class="section-body">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="empty-state" data-height="755">
-                    <img class="img-fluid" src="/assets/img/drawkit-full-stack-man-colour.png" alt="image">
-                    <h2 class="mt-0">Find an items??</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="col mt-3 mb-3">
+                    <h2>Find an items??</h2>
                     <p class="lead">
                         Apakah kamu menemukan barang hilang? Segera lapor sekarang!
                     </p>
-                    <a href="#form-in" class="btn btn-warning mt-4">Try Again</a><br>
-                    <p>Kamu kehilangan barang?? <a href="/home/katalog_barang" class="mt-4 bb">Cari disini</a></p>
+                    <a href="#form-in" class="btn btn-success">LAPOR DISINI</a>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="card card-hero" id="form-in">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col mt-3 mb-3">
+                            <h4>Our Services</h4>
+                            <p>Lapor serta klaim barang hilang hanya dalam satu ketukan.<br>Safe process Fast process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col mt-3 mb-3">
+                            <h4>Report Item</h4>
+                            <p>Lapor, tunggu verifikasi, share ke teman-teman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col mt-3 mb-3">
+                            <h4>Claim Item</h4>
+                            <p>Cek katalog untuk melihat barang kamu yang hilang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <h2>Our Partners</h2>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <img width="250" src="/assets/img/logo-if.png" alt="product">
+            <img width="250" src="/assets/img/logo-uai.png" alt="product">
+        </div>
+
+        <div class="row" id="form-in">
+            <div class="col">
+                <div class="card card-hero">
                     <div class="card-header">
                         <div class="card-icon">
                             <i class="far fa-file-alt"></i>
@@ -97,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="text-right">
-                                    <button class="btn btn-primary" id="swal-7">Submit</button>
+                                    <button class="btn btn-primary">Submit</button>
                                 </div>
                                 <!-- <div class="text-right">
                                     <a href="#profile4" class="btn btn-icon icon-right btn-primary">Next <i class="fas fa-arrow-right"></i></a>
@@ -107,18 +149,6 @@
 
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="card card-success">
-            <div class="card-body">
-                <p>
-                    قَالَ اللّٰهُ هٰذَا يَوْمُ يَنْفَعُ الصّٰدِقِيْنَ صِدْقُهُمْ ۗ لَهُمْ جَنّٰتٌ تَجْرِيْ مِنْ تَحْتِهَا الْاَنْهٰرُ خٰلِدِيْنَ فِيْهَآ اَبَدًا ۗرَضِيَ اللّٰهُ عَنْهُمْ وَرَضُوْا عَنْهُ ۗذٰلِكَ الْفَوْزُ الْعَظِيْمُ
-                </p>
-                <p>
-                    “Allah berfirman, “Inilah saat orang yang benar memperoleh manfaat dari kebenarannya. Mereka memperoleh surga yang mengalir di
-                    bawahnya sungai-sungai, mereka kekal di dalamnya selama-lamanya. Allah rida kepada mereka dan mereka pun ridha kepada-Nya. Itulah kemenangan yang agung.” (Q.S. al-Ma'idah [5]: 119)
-                </p>
             </div>
         </div>
     </div>
