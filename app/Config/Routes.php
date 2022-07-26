@@ -39,7 +39,7 @@ $routes->get('/katalog', 'Katalog::katalog_barang');
 $routes->get('admin/dashboard', 'Admin::index', ['filter' => 'role:superadmin,admin']);
 $routes->get('admin/manage_admin', 'Admin::manage_admin', ['filter' => 'role:superadmin']);
 $routes->get('admin/data-masuk', 'DataBarang::index');
-$routes->get('admin', 'DataBarang::total_ambil');
+$routes->get('/admin', 'DataBarang::total_ambil');
 $routes->get('admin/data-keluar', 'DataBarang::data_keluar');
 $routes->get('admin/verifikasi', 'DataBarang::data_verifikasi');
 $routes->get('/admin/confirm/(:segment)', 'DataBarang::konfirmasi/$1');
