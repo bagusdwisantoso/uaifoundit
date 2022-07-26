@@ -64,6 +64,8 @@
                                         ";
                                         } ?>
                                         <td>
+                                            <a href="/admin/active/<?= $us->id ?>" class="btn btn-success">Aktif</a>
+                                            <a href="/admin/nonactive/<?= $us->id ?>" class="btn btn-danger">non-Aktif</a>
                                             <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
                                                 Non-aktif
                                             </button>
@@ -87,7 +89,6 @@
                                                     </div>
                                                 </div>
                                             </div> -->
-                                            <a href="/admin/nonactive/<?= $us->id ?>" class="btn btn-danger" data-confirm="Nonaktifkan admin? | Apakah anda yakin?" data-confirm-yes="submitNon(<?= $us->id ?>)">non-Aktif</a>
                                             <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticActive">
                                                 Aktif
                                             </button>
@@ -111,7 +112,6 @@
                                                     </div>
                                                 </div>
                                             </div> -->
-                                            <a href="/admin/active/<?= $us->id ?>" id="act-<?= $us->id ?>" class="btn btn-success" data-confirm="Aktifkan admin? | Apakah anda yakin?" data-confirm-yes="submitAct(<?= $us->id ?>)">Aktif</a>
                                         </td>
                                         <td>
                                             <!-- ini untuk button profile @Aldo Ramadhan -->
