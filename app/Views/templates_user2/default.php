@@ -26,7 +26,8 @@
             </a>
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="home" class="nav-link px-2 text-white">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="/katalog" class="nav-link px-2 text-white">Katalog</a></li>
+                <li><a href="about" class="nav-link px-2 text-white">About</a></li>
             </ul>
         </div>
     </div>
@@ -56,7 +57,6 @@
 
     <!-- JS Libraies -->
     <script src="<?= base_url() ?>/assets/admin/assets/sticky-kit/dist1/sticky-kit.min.js"></script>
-    <script src="<?= base_url() ?>/assets/admin/assets/sweetalert/dist1/sweetalert.min.js"></script>
 
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/assets/admin/assets/js/scripts.js"></script>

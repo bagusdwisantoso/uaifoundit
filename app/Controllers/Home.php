@@ -9,12 +9,6 @@ class Home extends BaseController
         echo view('views_user/home.php');
     }
 
-    public function katalog_barang()
-    {
-        $data['katalog'] = $this->modelBarang->katalog();
-        return view('views_user/katalog_barang', $data);
-    }
-
     public function form_claim()
     {
         echo view('templates_user/header');
@@ -46,7 +40,7 @@ class Home extends BaseController
             'tanggal_ditemukan' => $this->request->getVar('tanggal'),
             'foto_barang'       => $namaFoto,
             'nama_pelapor'      => $this->request->getVar('nama_pelapor'),
-            'email'             => $this->request->getVar('email_penemu'),
+            'email'             => $this->request->getVar('email'),
             'no_hp'             => $this->request->getVar('no_hp')
         ]);
         //memunculkan alert data masuk db

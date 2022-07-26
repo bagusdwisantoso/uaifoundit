@@ -20,7 +20,7 @@ class DataBarang extends BaseController
 
     public function tambah_data()
     {
-        $fileFoto = $this->request->getFile('foto');
+        $fileFoto = $this->request->getFile('gambar');
         $namaFoto = $fileFoto->getRandomName();
         $fileFoto->move('img', $namaFoto);
 
@@ -68,7 +68,13 @@ class DataBarang extends BaseController
             'id_barang' => $id,
             'status' => '2'
         ]);
-
+        session()->setFlashdata('pesan', 'Data barang hilang Berhasil Disimpan');
         return redirect()->to('admin/data-masuk');
+    }
+
+    public function total_ambil()
+    {
+        $data['total_ambil'] = $this->modelBarang->total_ambil();
+        return view('views_admin/dashboard', $data);
     }
 }

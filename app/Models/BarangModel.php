@@ -58,4 +58,11 @@ class BarangModel extends Model
         $query   = $builder->get();
         return $query->getResult();
     }
+
+    public function total_ambil()
+    {
+        $builder  = $this->db->table('data_barang')->selectCount('id_barang')->where('status', 3);
+        $query    = $builder->get();
+        return $query->getResult();
+    }
 }
