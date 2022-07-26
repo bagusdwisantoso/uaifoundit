@@ -41,6 +41,7 @@
                                     <th>Username</th>
                                     <th>Status(Active)</th>
                                     <th>Aksi</th>
+                                    <th>Profile</th>
                                 </tr>
                                 <?php $i = 1; ?>
                                 <?php foreach ($users as $us) : ?>
@@ -48,13 +49,73 @@
                                         <td><?= $i++; ?></td>
                                         <td><?= $us->email ?></td>
                                         <td><?= $us->username ?></td>
-                                        <td><?= $us->active ?></td>
+                                        <!-- <td><?= $us->active ?></td> -->
+                                        <?php if ($us->active) {
+                                            echo "
+                                            <td>
+                                                <div class='badge badge-pill badge-success'>Active</div>
+                                            </td>
+                                        ";
+                                        } else {
+                                            echo "
+                                            <td>
+                                                <div class='badge badge-pill badge-danger'>Not Active</div>
+                                            </td>
+                                        ";
+                                        } ?>
                                         <td>
-                                            <div class="badge badge-success">Active</div>
+                                            <a href="/admin/active/<?= $us->id ?>" class="btn btn-success">Aktif</a>
+                                            <a href="/admin/nonactive/<?= $us->id ?>" class="btn btn-danger">non-Aktif</a>
+                                            <!-- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                                Non-aktif
+                                            </button>
+                                            <div class="modal fade" id="staticBackdrop" data-backdrop="false" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="staticBackdropLabel">Confirmation</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Apakah anda yakin ingin menonaktifkan Akun Admin berikut?
+                                                            Akun Admin tidak dapat digunakan apabila dalam keadaan belum aktif!
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                                            <a href="/admin/nonactive/<?= $us->id ?>" id="<?= $us->id ?>" type="button" class="btn btn-danger">Non Aktifkan</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticActive">
+                                                Aktif
+                                            </button>
+                                            <div class="modal fade" id="staticActive" data-backdrop="false" data-keyboard="false" tabindex="-1" aria-labelledby="staticActiveLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="staticActiveLabel">Confirmation</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Apakah anda yakin ingin mengaktifkan Akun Admin ini kembali?
+                                                            Akun admin yang sudah di aktifkan, akan dapat digunakan kembali untuk masuk ke dalam Dashboard Admin!
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                                            <a href="/admin/active/<?= $us->id ?>" id="<?= $us->id ?>" type="button" class="btn btn-success">Aktifkan</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
                                         </td>
                                         <td>
-                                            <a href="#" class="btn btn-primary"><i class="fas fa-info"></i></a>
-                                            <a href="#" class="btn btn-success">Konfirmasi</a>
+                                            <!-- ini untuk button profile @Aldo Ramadhan -->
+                                            <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
