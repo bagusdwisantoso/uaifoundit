@@ -1,13 +1,13 @@
 <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-        <a href="<?= site_url('admin/dashboard') ?>">UAI Found It!</a>
+        <a href="<?= site_url('admin') ?>">UAI Found It!</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-        <a href="<?= site_url('admin/dashboard') ?>">UFI</a>
+        <a href="<?= site_url('admin') ?>">UFI</a>
     </div>
     <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
-        <li><a class="nav-link" href="<?= site_url('admin/dashboard') ?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+        <li><a class="nav-link" href="<?= site_url('admin') ?>"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
         <?php if (in_groups('superadmin')) : ?>
             <li><a class="nav-link" href="<?= site_url('admin/manage_admin') ?>"><i class="fas fa-users"></i> <span>Manage Admin</span></a></li>
         <?php endif; ?>
