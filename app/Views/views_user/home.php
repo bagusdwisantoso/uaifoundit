@@ -8,9 +8,9 @@
 <?= $this->section('content') ?>
 <section class="section">
     <div class="section-body">
-        <div class="card">
+        <div class="card" data-background="/assets/img/bk-1.png">
             <div class="card-body">
-                <div class="col mt-3 mb-3">
+                <div class="col mt-3 mb-3 text-white">
                     <h2>Find an items??</h2>
                     <p class="lead">
                         Apakah kamu menemukan barang hilang? Segera lapor sekarang!
