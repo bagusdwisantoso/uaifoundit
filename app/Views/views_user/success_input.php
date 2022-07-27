@@ -20,6 +20,12 @@
                             <p class="lead">
                                 Satu tindakan kamu sangat berpengaruh bagi orang lain
                             </p>
+                            <div class = "row">
+                            <a href="#" class="btn btn-md btn-light"> <i class="fab fa-facebook"></i></a>
+                            <a href="#" class="btn btn-md btn-light"> <i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-md btn-light"> <i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="btn btn-md btn-light"> <i class="fab fa-instagram"></i></a>
+                            </div>
                             <p>Kembali ke beranda <a href="/" class="mt-4 bb">disini</a></p>
                         </div>
                     </div>
