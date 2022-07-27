@@ -104,7 +104,7 @@
 	<div class="wrap">
 		<h1>We Are Under Construction</h1>
 		<p>The page you were looking for could not be found.</p>
-		<a class="btn btn-primary" href="home" role="button">Home</a>
+		<a class="btn btn-primary" href="/" role="button">Home</a>
 	</div>
 </body>
 
