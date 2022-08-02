@@ -115,7 +115,7 @@
                                         </td>
                                         <td>
                                             <!-- ini untuk button profile @Aldo Ramadhan -->
-                                            <a href="#" class="btn btn-primary"><i class="fas fa-user"></i></a>
+                                            <a href="/admin/profile/<?= $us->id ?>" class="btn btn-primary"><i class="fas fa-user"></i></a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

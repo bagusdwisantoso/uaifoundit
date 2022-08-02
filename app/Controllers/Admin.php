@@ -17,7 +17,8 @@ class Admin extends BaseController
 
     public function profile()
     {
-        echo view('views_admin/profile');
+        $data['users'] = $this->modelAdmin->findAll();
+        return view('views_admin/profile', $data);
     }
 
     public function status_nonactive($id)

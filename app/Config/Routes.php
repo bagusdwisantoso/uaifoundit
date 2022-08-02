@@ -40,6 +40,7 @@ $routes->get('admin/dashboard', 'Admin::index', ['filter' => 'role:superadmin,ad
 $routes->get('admin/manage_admin', 'Admin::manage_admin', ['filter' => 'role:superadmin']);
 $routes->get('/admin/nonactive/(:segment)', 'Admin::status_nonactive/$1');
 $routes->get('/admin/active/(:segment)', 'Admin::status_active/$1');
+$routes->get('/admin/profile/(:segment)', 'Admin::profile/$1');
 #$routes->get('/admin/activitys/(:segment)', 'Admin::status_active/$1');
 $routes->get('admin/data-masuk', 'DataBarang::index');
 $routes->get('admin', 'DataBarang::total_ambil');
