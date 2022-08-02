@@ -10,7 +10,7 @@ class DataBarang extends BaseController
     public function index()
     {
         $data['data_barang'] = $this->modelBarang->getAll();
-        return view('views_admin/data_masuk', $data);
+        return view('views_admin/data_barang', $data);
     }
 
     public function data_keluar()

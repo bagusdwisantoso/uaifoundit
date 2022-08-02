@@ -41,12 +41,12 @@ $routes->get('admin/manage_admin', 'Admin::manage_admin', ['filter' => 'role:sup
 $routes->get('/admin/nonactive/(:segment)', 'Admin::status_nonactive/$1');
 $routes->get('/admin/active/(:segment)', 'Admin::status_active/$1');
 #$routes->get('/admin/activitys/(:segment)', 'Admin::status_active/$1');
-$routes->get('admin/data-masuk', 'DataBarang::index');
+$routes->get('admin/data-barang', 'DataBarang::index');
 $routes->get('/admin', 'DataBarang::total_ambil');
 $routes->get('admin/data-keluar', 'DataBarang::data_keluar');
 $routes->get('admin/verifikasi', 'DataBarang::data_verifikasi');
 $routes->get('/admin/confirm/(:segment)', 'DataBarang::konfirmasi/$1');
-$routes->get('/admin/data-masuk/(:segment)', 'DataBarang::detail/$1');
+$routes->get('/admin/data-barang/(:segment)', 'DataBarang::detail/$1');
 
 /*
  * --------------------------------------------------------------------
