@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card card-success">
                     <div class="card-body">
                         <div class="col mt-3 mb-3">
                             <h4>Our Services</h4>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card card-success" data-background="/assets/img/bk-2.png">
                     <div class="card-body">
                         <div class="col mt-3 mb-3">
                             <h4>Report Item</h4>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div class="card card-success" data-background="/assets/img/bk-3.png">
                     <div class="card-body">
                         <div class="col mt-3 mb-3">
                             <h4>Claim Item</h4>
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="text-right">
-                                    <button class="btn btn-primary">Submit</button>
+                                    <button class="btn btn-success">Submit</button>
                                 </div>
                                 <!-- <div class="text-right">
                                     <a href="#profile4" class="btn btn-icon icon-right btn-primary">Next <i class="fas fa-arrow-right"></i></a>

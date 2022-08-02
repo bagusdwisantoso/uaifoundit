@@ -42,7 +42,6 @@
 
                                 <div class="col-12 col-md-6 col-lg-6">
                                     <p>Nama Pelapor : <?= $verif->nama_pelapor ?><br>
-                                        Nomor Handphone : <?= $verif->no_hp ?><br>
                                         Email Pelapor : <?= $verif->email ?></p>
                                 </div>
                             </div>
