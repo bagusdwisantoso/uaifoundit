@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card card-success">
+                <div class="card card-success" data-background="/assets/img/bk-2.png">
                     <div class="card-body">
                         <div class="col mt-3 mb-3">
                             <h4>Report Item</h4>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card card-success">
+                <div class="card card-success" data-background="/assets/img/bk-3.png">
                     <div class="card-body">
                         <div class="col mt-3 mb-3">
                             <h4>Claim Item</h4>
