@@ -45,15 +45,10 @@ class DataBarang extends BaseController
         return redirect()->to('admin/data-masuk');
     }
 
-    public function detail($id_barang = null)
+    public function detail($id_barang)
     {
-        $detail = $this->modelBarang->find($id_barang);
-        if (is_object($detail)) {
-            $data['detail'] = $this->modelBarang->where(['id_barang' => $id_barang])->first();
-            return view('views_admin/detail_barang', $data);
-        } else {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
-        }
+        $data['data_barang'] = $this->modelBarang->detail($id_barang);
+        return view('views_admin/detail_barang', $data);
     }
 
     public function data_verifikasi()

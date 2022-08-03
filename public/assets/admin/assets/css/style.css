@@ -1246,6 +1246,15 @@ h6 .badge {
     background-color: #3bb557 !important;
     color: #fff !important; }
 
+.btn-green, .btn-greeen.disabled {
+  box-shadow: 0 2px 6px #3aafa9;
+  background-color: #3aafa9;
+  border-color: #3aafa9;
+  color: #fff; }
+  .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.disabled:hover, .btn-green.disabled:focus, .btn-green.disabled:active {
+    background-color: #3aafa9 !important;
+    color: #fff !important; }
+
 .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success.disabled:hover, .btn-outline-success.disabled:focus, .btn-outline-success.disabled:active {
   background-color: #47c363 !important;
   color: #fff !important; }
@@ -1337,7 +1346,7 @@ h6 .badge {
   color: #fff; }
   .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active, .btn-outline-white.disabled:hover, .btn-outline-white.disabled:focus, .btn-outline-white.disabled:active {
     background-color: #fff;
-    color: #6777ef; }
+    color: #3aafa9; }
 
 .btn-round {
   border-radius: 30px;

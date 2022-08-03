@@ -65,4 +65,13 @@ class BarangModel extends Model
         $query    = $builder->get();
         return $query->getResult();
     }
+
+    function detail($id)
+    {
+        $builder    = $this->db->table('data_barang');
+        $builder->join('status', 'status.id_status = data_barang.status', false);
+        $builder->where('id_barang', $id);
+        $query      = $builder->get();
+        return $query->getResult();
+    }
 }

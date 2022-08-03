@@ -22,11 +22,20 @@
         <div class="row">
             <?php foreach ($katalog as $ktg) : ?>
                 <div class="col-md-6 col-lg-3">
-
-                    <div class="card card-primary">
-                        <div class="card-body">
-                            <img class="img-fluid" src="/img/<?= $ktg->foto_barang ?>">
-                            <p>Found on <?= date('d F Y', strtotime($ktg->tanggal_ditemukan)); ?></p>
+                    <div class="card card-primary" href="#">
+                        <div class="card-body ">
+                            <img class="mr-3 rounded" height="100" src="/img/<?= $ktg->foto_barang ?>">
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                        <div class="card-footer">
+                            <li class="media">
+                                <div class="media-body">
+                                    <div class="media-title"><?= $ktg->nama_barang ?></div>
+                                    <div class="text-muted text-small">by <?= $ktg->nama_pelapor ?></a>
+                                        <div class="bullet"></div> <?= date('d F Y', strtotime($ktg->tanggal_ditemukan)); ?>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
                     </div>
 

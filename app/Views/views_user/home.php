@@ -15,7 +15,7 @@
                     <p class="lead">
                         Apakah kamu menemukan barang hilang? Segera lapor sekarang!
                     </p>
-                    <a href="#form-in" class="btn btn-success">LAPOR DISINI</a>
+                    <a href="#form-in" class="btn btn-outline-white btn-lg btn-icon icon-left">Lapor Sekarang</a>
                 </div>
             </div>
         </div>
@@ -137,9 +137,9 @@
                                     <div class="invalid-feedback">
                                         Kolom ini wajib diisi ya :)
                                     </div>
-                                </div>
+                                </div><br>
                                 <div class="text-right">
-                                    <button class="btn btn-success">Submit</button>
+                                    <button class="btn btn-lg btn-icon icon-left btn-green"><i class="fas fa-check"></i> Submit</button>
                                 </div>
                                 <!-- <div class="text-right">
                                     <a href="#profile4" class="btn btn-icon icon-right btn-primary">Next <i class="fas fa-arrow-right"></i></a>
