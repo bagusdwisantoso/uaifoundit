@@ -8,8 +8,15 @@
 <?= $this->section('content') ?>
 <section class="section">
     <div class="section-body">
-        <div class="row">
-            <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <?php foreach ($data_katalog as $katalog) : ?>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img alt="image" src="/img/<?= $katalog->foto_barang ?>" class="img-fluid">
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
