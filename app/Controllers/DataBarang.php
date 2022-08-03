@@ -64,7 +64,7 @@ class DataBarang extends BaseController
             'status' => '2'
         ]);
         session()->setFlashdata('pesan', 'Data barang hilang Berhasil Disimpan');
-        return redirect()->to('admin/data-masuk');
+        return redirect()->to('admin/data-barang');
     }
 
     public function total_ambil()
