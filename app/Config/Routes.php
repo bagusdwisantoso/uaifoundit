@@ -35,6 +35,7 @@ $routes->setAutoRoute(true);
 $routes->addRedirect('/', 'home');
 
 $routes->get('/katalog', 'Katalog::katalog_barang');
+$routes->get('/katalog/detail/ufi=(:segment)', 'Katalog::detail/$1');
 
 $routes->get('admin/dashboard', 'Admin::index', ['filter' => 'role:superadmin,admin']);
 $routes->get('admin/manage_admin', 'Admin::manage_admin', ['filter' => 'role:superadmin']);
@@ -48,6 +49,7 @@ $routes->get('admin/data-keluar', 'DataBarang::data_keluar');
 $routes->get('admin/verifikasi', 'DataBarang::data_verifikasi');
 $routes->get('/admin/confirm/(:segment)', 'DataBarang::konfirmasi/$1');
 $routes->get('/admin/data-barang/(:segment)', 'DataBarang::detail/$1');
+
 
 /*
  * --------------------------------------------------------------------

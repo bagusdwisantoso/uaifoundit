@@ -51,6 +51,15 @@ class BarangModel extends Model
         return $query->getResult();
     }
 
+    public function detail_ktlg($id)
+    {
+        $builder    = $this->db->table('data_barang');
+        $builder->where("status=2");
+        $builder->where("id_barang", $id);
+        $query      = $builder->get();
+        return $query->getResult();
+    }
+
     public function verifikasi()
     {
         $builder = $this->db->table('data_barang');
